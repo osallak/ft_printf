@@ -26,9 +26,9 @@ static void	put_ptr(int count, char *ret)
 int	ft_print_pointer(unsigned long ptr)
 {
 	char			ret[50];
-	unsigned long	reminder;
-	int				count;
-	int				len;
+	unsigned long		reminder;
+	int			count;
+	int			len;
 
 	reminder = 0;
 	count = 0;
