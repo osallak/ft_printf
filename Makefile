@@ -17,15 +17,15 @@ OBJS = $(SRCS:.c=.o)
 CC = cc
 CFLAGS = -Wall -Werror -Wextra
 RM = rm -f
-AR = ar -rcs
+AR = @ar -rcs
 
 all: $(NAME)
 
-$(NAME):$(OBJS) $(INC)
-	$(AR) $(NAME) $(OBJS) 
+$(NAME):$(OBJS) 
+	$(AR) $(NAME) $(OBJS)
 
-%.o:%.c
-	$(CC) $(CFLAGS) -o $@ -c $<
+%.o:%.c $(INC)
+	$(CC) $(CFLAGS) -o $@ -c $< -I $(INC)
 
 clean:
 	$(RM) $(OBJS)

@@ -6,7 +6,7 @@
 /*   By: osallak <osallak@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 00:52:56 by osallak           #+#    #+#             */
-/*   Updated: 2021/11/24 18:48:19 by osallak          ###   ########.fr       */
+/*   Updated: 2021/11/24 22:57:09 by osallak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ static void	put_ptr(int count, char *ret)
 int	ft_print_pointer(unsigned long ptr)
 {
 	char			ret[50];
-	unsigned long		reminder;
-	int			count;
-	int			len;
+	unsigned long	reminder;
+	int				count;
+	int				len;
 
 	reminder = 0;
 	count = 0;
