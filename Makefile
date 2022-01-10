@@ -12,6 +12,7 @@ SRCS = ft_check_percent.c\
 		ft_print_string.c\
 		ft_printf.c\
 		ft_strdup.c\
+		ft_bool.c
 
 OBJS = $(SRCS:.c=.o)
 CC = cc

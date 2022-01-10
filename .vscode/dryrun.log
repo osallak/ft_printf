@@ -1,0 +1,18 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/goinfre/osallak/ft_printf'
+cc -Wall -Werror -Wextra -o ft_check_percent.o -c ft_check_percent.c -I ft_printf.h
+cc -Wall -Werror -Wextra -o ft_print_char.o -c ft_print_char.c -I ft_printf.h
+cc -Wall -Werror -Wextra -o ft_print_hexa_lower.o -c ft_print_hexa_lower.c -I ft_printf.h
+cc -Wall -Werror -Wextra -o ft_print_pointer.o -c ft_print_pointer.c -I ft_printf.h
+cc -Wall -Werror -Wextra -o ft_print_unsigned.o -c ft_print_unsigned.c -I ft_printf.h
+cc -Wall -Werror -Wextra -o ft_strlen.o -c ft_strlen.c -I ft_printf.h
+cc -Wall -Werror -Wextra -o ft_itoa.o -c ft_itoa.c -I ft_printf.h
+cc -Wall -Werror -Wextra -o ft_print_decimal.o -c ft_print_decimal.c -I ft_printf.h
+cc -Wall -Werror -Wextra -o ft_print_hexa_upper.o -c ft_print_hexa_upper.c -I ft_printf.h
+cc -Wall -Werror -Wextra -o ft_print_string.o -c ft_print_string.c -I ft_printf.h
+cc -Wall -Werror -Wextra -o ft_printf.o -c ft_printf.c -I ft_printf.h
+cc -Wall -Werror -Wextra -o ft_strdup.o -c ft_strdup.c -I ft_printf.h
+cc -Wall -Werror -Wextra -o ft_bool.o -c ft_bool.c -I ft_printf.h
+ar -rcs libftprintf.a ft_check_percent.o ft_print_char.o ft_print_hexa_lower.o ft_print_pointer.o ft_print_unsigned.o ft_strlen.o ft_itoa.o ft_print_decimal.o ft_print_hexa_upper.o ft_print_string.o ft_printf.o ft_strdup.o ft_bool.o
+make: Leaving directory `/goinfre/osallak/ft_printf'
+ 

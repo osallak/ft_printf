@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: osallak <osallak@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: osallak <osallak@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 21:21:28 by osallak           #+#    #+#             */
-/*   Updated: 2021/11/24 23:01:12 by osallak          ###   ########.fr       */
+/*   Updated: 2022/01/10 22:07:57 by osallak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,6 @@ int		ft_strlen(const char *s);
 char	*ft_itoa(int n);
 char	*ft_strdup(const char *src);
 int		ft_putchar(char c);
+int		ft_bool(int	c);
 
 #endif

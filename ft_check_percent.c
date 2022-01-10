@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_check_percent.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: osallak <osallak@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: osallak <osallak@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 21:41:40 by osallak           #+#    #+#             */
-/*   Updated: 2021/11/24 17:06:53 by osallak          ###   ########.fr       */
+/*   Updated: 2022/01/10 22:04:56 by osallak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ int	ft_check_percent(char *format, int index, va_list ptr)
 		len += ft_print_hexa_lower(va_arg(ptr, unsigned int));
 	else if (format[index + 1] == 'X')
 		len += ft_print_hexa_upper(va_arg(ptr, int));
+	else if (format[index + 1] == 'b')
+		len+= ft_bool(va_arg(ptr,int));
 	else if (format[index + 1] == '%')
 	{
 		write (1, "%", 1);
