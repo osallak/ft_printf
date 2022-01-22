@@ -1,5 +1,4 @@
 NAME = libftprintf.a
-INC = ft_printf.h
 SRCS = ft_check_percent.c\
 		ft_print_char.c \
 		ft_print_hexa_lower.c\
@@ -25,8 +24,8 @@ all: $(NAME)
 $(NAME):$(OBJS) 
 	$(AR) $(NAME) $(OBJS)
 
-%.o:%.c $(INC)
-	$(CC) $(CFLAGS) -o $@ -c $< -I $(INC)
+%.o:%.c
+	$(CC) $(CFLAGS) -o $@ -c $<
 
 clean:
 	$(RM) $(OBJS)
